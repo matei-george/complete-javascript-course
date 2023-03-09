@@ -1,22 +1,14 @@
 // Coding Challenge-1 || BMI calculation
 
-let weightJohn,
-  heightJohn,
-  weightMark,
-  heightMark,
-  bmiJohn,
-  bmiMark,
-  markHigherBMI;
+// Fixed using const.
+const weightJohn = 85;
+const heightJohn = 1.76;
+const heightMark = 1.88;
+const weightMark = 95;
 
-weightJohn = 92;
-heightJohn = 1.95;
+const bmiJohn = weightJohn / heightJohn ** 2;
+const bmiMark = weightMark / heightMark ** 2;
 
-weightMark = 78;
-heightMark = 1.69;
+const markHigherBMI = bmiMark > bmiJohn;
 
-bmiJohn = weightJohn / heightJohn ** 2;
-bmiMark = weightMark / heightMark ** 2;
-
-markHigherBMI = bmiMark > bmiJohn;
-
-console.log(bmiJohn, bmiMark, markHigherBMI);
+console.log(bmiMark, bmiJohn, markHigherBMI);
