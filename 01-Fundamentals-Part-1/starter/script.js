@@ -91,21 +91,65 @@
 // of code.`);
 
 // [----If Else----]
-const age = 14;
+// const age = 14;
 
-if (age >= 18) console.log(`Student is old enough to drive 😊`);
-else
-  console.log(`Student is not old enough to drive 😥. 
-Needs grow ${18 - age} more years`);
+// if (age >= 18) console.log(`Student is old enough to drive 😊`);
+// else
+//   console.log(`Student is not old enough to drive 😥.
+// Needs grow ${18 - age} more years`);
 
-const birthYear = 1853;
-let century;
-if (birthYear <= 1900) {
-  century = 19;
-} else if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
+// const birthYear = 1853;
+// let century;
+// if (birthYear <= 1900) {
+//   century = 19;
+// } else if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
 
-console.log(century);
+// [----Type Conversion----]
+
+// const inputYear = "1991";
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number("Jonas"));
+// console.log(typeof NaN);
+
+// console.log(typeof String(18));
+
+// // [----Type Coercion----]
+// console.log("23" + "10" + 3);
+
+// console.log(Boolean(0));
+// console.log(Boolean(1));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Hello"));
+// console.log(Boolean({}));
+
+// const money = 0;
+// if (money) console.log(`Don't spend it all`);
+// else console.log(`You should get a job.`);
+
+// let height = 0;
+// if (height) console.log(`Defined`);
+// else console.log(`Undefined`);
+
+// const age = 21;
+// if (age === 21) console.log("a");
+// else console.log("b");
+// console.log(18 === 18);
+// console.log("18" === 18);
+
+// const favNumber = Number(prompt(`What is your favourite number?`));
+// if (favNumber === 23) console.log(`Cool`);
+// else console.log(`Not cool`);
+
+// [----Logical Operators----]
+const hasDriversLicence = true;
+const hasGoodVision = true;
+const isTired = true;
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+if (hasDriversLicence && hasGoodVision && !isTired) console.log(`Driver is ready to drive`);
+else console.log(`Driver is not ready to drive`);
