@@ -146,10 +146,54 @@
 // else console.log(`Not cool`);
 
 // [----Logical Operators----]
-const hasDriversLicence = true;
-const hasGoodVision = true;
-const isTired = true;
-console.log(hasDriversLicence && hasGoodVision);
-console.log(hasDriversLicence || hasGoodVision);
-if (hasDriversLicence && hasGoodVision && !isTired) console.log(`Driver is ready to drive`);
-else console.log(`Driver is not ready to drive`);
+// const hasDriversLicence = true;
+// const hasGoodVision = true;
+// const isTired = true;
+// console.log(hasDriversLicence && hasGoodVision);
+// console.log(hasDriversLicence || hasGoodVision);
+// if (hasDriversLicence && hasGoodVision && !isTired) console.log(`Driver is ready to drive`);
+// else console.log(`Driver is not ready to drive`);
+
+// [----The switch----]
+// const day = prompt(`What day is it today?`);
+
+// Using decision blocks
+// if (day === "monday") {
+//   console.log(`Today is monday`);
+//   console.log(`Go make coding stuff`);
+// } else if (day === "tuesday") {
+//   console.log(`Today is tuesday`);
+//   console.log(`Prepare for test`);
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log(`Today is midweek`);
+//   console.log(`Prepare for test`);
+// } else if (day === "friday") {
+//   console.log(`Today is fridaaaaay`);
+// } else console.log(`Invalid or no data for ${day} value`);
+
+// Using switch blocks
+// switch (day) {
+//   case "monday":
+//     console.log(`Today is monday`);
+//     console.log(`Go make coding stuff`);
+//     break;
+//   case "tuesday":
+//     console.log(`Today is tuesday`);
+//     console.log(`Prepare for test`);
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log(`Today is midweek`);
+//     console.log(`Prepare for test`);
+//     break;
+//   case "friday":
+//     console.log(`Today is fridaaaaay`);
+//     break;
+//   default:
+//     console.log(`Invalid or no data for ${day} value`);
+// }
+
+// [----The ternary operator----]
+const age = 21;
+const drink = age >= 18 ? "beer" : "water";
+console.log(`I like to drink ${drink}`);
