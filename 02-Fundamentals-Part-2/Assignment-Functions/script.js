@@ -29,3 +29,14 @@ console.log(country(1441), country(140), country(215));
 
 const country2 = (population) => Math.round((population / 8000) * 100 * 100) / 100;
 console.log(country2(1441), country2(140), country2(215));
+
+// Lecture : Functions calling other functions
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage}% of the world`;
+}
+
+const china2 = describePopulation("China", 1441);
+const russia2 = describePopulation("Russia", 140);
+const brazil2 = describePopulation("Brazil", 250);
+console.log(`${china2}\n${russia2}\n${brazil2}`);
