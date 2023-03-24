@@ -2,40 +2,30 @@
 
 // Lecture : Functions
 function describeCountry(country, population, capitalCity) {
-  return `${country} has ${population} milion people, and its capital city is ${capitalCity}.`;
+  return `${country} has ${population} milion people and its capital city is ${capitalCity}`;
 }
-const finland = describeCountry("Finland", 6, "Helsinki");
+
 const romania = describeCountry("Romania", 19, "Bucharest");
-const germany = describeCountry("Germany", 80, "Berlin");
+const finland = describeCountry("Finland", 6, "Helsinki");
+const usa = describeCountry("USA", 350, "Washington");
 
-console.log(`${finland}
-${romania}
-${germany}`);
+console.log(`${romania}\n${finland}\n${usa}`);
 
-// Lecture : Declarations vs expressions
+// Lecture : Function declaration vs expression
 function percentageOfWorld1(population) {
-  return Math.round((population / 8000) * 100 * 10) / 10;
+  return Math.round((population / 8000) * 100 * 100) / 100;
 }
-const usa = percentageOfWorld1(350);
-const canada = percentageOfWorld1(38);
-const russia = percentageOfWorld1(145);
+const china = percentageOfWorld1(1441);
+const russia = percentageOfWorld1(140);
+const brazil = percentageOfWorld1(215);
+console.log(china, russia, brazil);
 
-console.log(`${usa}, ${canada}, ${russia}`);
-
-const calcPercentage = function percentageOfWorld2(population) {
-  return Math.round((population / 8000) * 100 * 10) / 10;
+const country = function percentageOfWorld2(population) {
+  return Math.round((population / 8000) * 100 * 100) / 100;
 };
-
-const usa2 = calcPercentage(350);
-const canada2 = calcPercentage(38);
-const russia2 = calcPercentage(145);
-
-console.log(`${usa2}, ${canada2}, ${russia2}`);
+console.log(country(1441), country(140), country(215));
 
 // Lecture : Arrow Functions
 
-const percentageOfWorld3 = (population) => {
-  return Math.round((population / 8000) * 100 * 10) / 10;
-};
-const romania2 = percentageOfWorld3(19);
-console.log(romania2);
+const country2 = (population) => Math.round((population / 8000) * 100 * 100) / 100;
+console.log(country2(1441), country2(140), country2(215));
