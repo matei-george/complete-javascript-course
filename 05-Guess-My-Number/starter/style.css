@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -94,6 +94,10 @@ h1 {
   display: block;
   margin-bottom: 3rem;
 }
+.guess::-webkit-inner-spin-button,
+.guess::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
 
 .btn {
   border: none;
@@ -107,6 +111,10 @@ h1 {
 
 .btn:hover {
   background-color: #ccc;
+}
+.btn:active {
+  background-color: #222;
+  color: #eee;
 }
 
 .message {
